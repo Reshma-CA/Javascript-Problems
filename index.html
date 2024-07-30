@@ -1,0 +1,33 @@
+<!-- DOM manipulation -->
+
+<p id="one">
+    Hello
+</p>
+<h1 id="title">Hello World</h1>
+
+<button onclick="change()">Change </button>
+
+<script>
+    // select paragraph tag
+
+   var para = document.getElementById("one")
+   console.log(para.textContent)
+   para.textContent = "Bye" 
+   
+
+   // select h1 tag
+   var title1 = document.getElementById("title")
+
+   // print h1 tag
+   console.log(title1.textContent)
+   // change h1 tag
+//    title1.textContent = "Bye World"
+
+   function change(){
+    title.textContent = "Bye World"
+   }
+
+
+
+</script>
+

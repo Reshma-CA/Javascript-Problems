@@ -1,0 +1,45 @@
+
+<center>
+<form style="padding:80px;">
+    <table>
+        <tr>
+            <td>num1</td><td><input id = "one" type="number"  placeholder="enter num1"> </td>
+        </tr>
+        <tr>
+            <td>num2</td><td><input id = "two" type="number"  placeholder="enter num2"> </td>
+        </tr>
+    </table>
+</form>
+
+<button onclick="sum()">ADD</button>
+
+
+    <p id="result">Result:</p>
+
+</center>
+
+<script>
+    var num1  = document.getElementById("one")
+    var num2  = document.getElementById("two")
+
+    var result = document.getElementById("result")
+
+    function sum(){
+
+        var number1 = num1.value
+        var number2 = num2.value
+
+        var total = Number(number1)+Number(number2)
+        result.textContent="Result: " + total;
+
+    }
+
+    
+
+    
+    
+  
+
+
+</script>
+
