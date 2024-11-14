@@ -1,0 +1,40 @@
+<center>
+<h1>Guess the number from 1 to 10</h1>
+
+<input type="number" id="nums">
+
+<button onclick="random_game()">Check</button>
+
+<h3 id = "msg">You are Wrong/Write</h3>
+<h3 id = "score">Your score is:10</h3>
+
+</center>
+
+<script>
+ var num = document.getElementById("nums")
+ var score = document.getElementById("score")
+ var random_num = Math.random()
+ var random_floor = Math.floor(random_num*10+1)
+ 
+ 
+ console.log(random_floor) 
+ let scores = 10
+ 
+function random_game(){
+    var numvalue = Number(num.value) 
+    console.log(numvalue)
+    if(random_num == numvalue){
+        msg.textContent = "your are win!"
+        alert("your are win!")
+      
+       
+    }else{
+        scores-=1;
+        score.textContent = "Your score is:"+scores
+        msg.textContent = "your are loss!"
+        
+        
+    }
+}
+    
+</script>

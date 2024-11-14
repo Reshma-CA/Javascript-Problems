@@ -1,0 +1,19 @@
+<h1 id="result">Name</h1>
+
+<button onclick="btn_click_name_above(event)">John</button>
+<button onclick="btn_click_name_above(event)">Hari</button>
+<button onclick="btn_click_name_above(event)">Surya</button>
+
+
+<script>
+    var results = document.getElementById("result")
+    
+    
+    
+    function btn_click_name_above(event){
+        results.textContent = event.target.textContent
+        
+    }
+
+
+</script>
